@@ -34,13 +34,19 @@
 
 							<article id="about-me">
 								<h2 class="major">About me</h2>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.  By the way, check out my <a href="#projects">awesome work</a>.</p>
+								<p>I'm a 2<sup>nd</sup> year Computer Science student passionate about programming. By the way, check out my <a href="#projects">awesome work</a>.</p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis.</p>
+								<p id="day"></p>
+								<script>
+									const dayElement = document.querySelector("#day")
+									dayElement.textContent = "Have a lovely " + new Date().toLocaleDateString('en-US', {
+										weekday: 'long'
+									}) + "!"
+								</script>
 							</article>
 
 							<article id="projects">
 								<h2 class="major">Projects</h2>
-                                <span class="image main"><img src="images/#" alt="" /></span>
                                 <h3>Puzzle room game</h3>
                                 <p>This was my most recent personal project, a short game developed in Unity. The objective of the game is to solve a handful of puzzles in order to obtain a 6-letter code unlocking a physical <i>cryptex</i> (Da Vinci's "portable vault").</p>
 								<p align="center">
@@ -68,7 +74,7 @@
 
 							<article id="resume">
 								<h2 class="major">Resume</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.</p>
+								<object data="assets/files/Resume.pdf" type="application/pdf" style="position: center; height: 50rem; width: 100%; border: none"></object>
 							</article>
 
 							<article id="contact">
