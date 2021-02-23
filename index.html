@@ -12,7 +12,7 @@
 
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<span class="image fit"><img src="images/avatar.jpg" alt="" /></span>
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -60,15 +60,16 @@
                                 <p align="center">
                                     <iframe width="640" height="360" src="https://www.youtube.com/embed/CRW8lzE-pPo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </p>
-                                <p>The game runs on Node.js, using npm as a package manager (Babel for backwards compatibility and Socket.io for client-server communication).
+                                <p>The game runs on Node.js, using npm as a package manager (Babel for backwards compatibility, Parcel for bundling JS files together, and Socket.io for client-server communication).
 									Players are randomly assigned either a ghost or a Pacman (probability percentage can be edited in the source code). Both types can eat "food" for points, however only Pacmen can eat the powerup pills, and once they do they are able to eat ghosts.
 									Server is mainly acting as a relay, sending information between all the clients. See the GitHub repository for more insight.</p>
                                 <a href="https://github.com/Adee1499/F28WP-Optimize-Prime-MMOG" target="_blank" class="button">View source code</a>
 								<br><br>
                                 <h3>Nonogram party (IN PROGRESS)</h3>
-                                <p>A single and multiplayer mobile game currently being developed in Unity, targeted mainly at the Android platform but with success potentially also ported to iOS.
-									</p>
+                                <p>A single and multiplayer mobile game I am currently developing in Unity, in collaboration with a team of graphic designers in Italy. It's targeted mainly at the Android platform but with success potentially also ported to iOS.</p>
 								<span class="image main"><img src="images/1.png" alt="" /></span>
+								<p>Nonograms (also known as picross, paint-by-numbers, or griddlers) are logic puzzles in which cells must be coloured according to numbers around the grid, 
+									revealing a hidden picture.</p>
 								<a href="https://github.com/Adee1499/Nonogram-Party" target="_blank" class="button">View source code</a>
 							</article>
 
@@ -83,15 +84,15 @@
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email" required/>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
